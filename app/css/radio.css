@@ -1,0 +1,73 @@
+.radioGroup {
+  padding: 1em;
+}
+.radioGroup label {
+  display: block;
+  padding: .5em;
+  cursor: pointer;
+}
+.radioGroup label > span:before {
+  content: "";
+  display: inline-block;
+  vertical-align: -.25em;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  margin-right: .5em;
+}
+.radioGroup label > input:checked + span:before {
+  border-color: #e48;
+  background-image: -webkit-radial-gradient(circle closest-side, #ee4488 0%, #ee4488 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+  background-image: radial-gradient(circle closest-side, #ee4488 0%, #ee4488 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+}
+.radioGroup label > input:disabled + span {
+  opacity: .5;
+}
+.radioGroupp label > input:disabled:checked + span:before {
+  background-image: -webkit-radial-gradient(circle closest-side, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+  background-image: radial-gradient(circle closest-side, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+}
+.radioGroup label > input {
+  display: none;
+}
+
+.toggleGroup {
+  padding: 1em;
+}
+.toggleGroup:before, .toggleGroup:after {
+  content: "";
+  display: table;
+}
+.toggleGroup:after {
+  clear: both;
+}
+.toggleGroup label {
+  float: left;
+  cursor: pointer;
+}
+.toggleGroup label > span {
+  padding: .5em 1em;
+  background-color: #fff;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.12), 0 1.5px 6px rgba(0, 0, 0, 0.06);
+}
+.toggleGroup label > span:focus, .toggleGroup label > span:hover {
+  color: #e48;
+}
+.toggleGroup label:not(:last-of-type) > span {
+  border-right: 0;
+}
+.toggleGroup label:first-of-type > span {
+  border-radius: 2px 0 0 2px;
+}
+.toggleGroup label:last-of-type > span {
+  border-radius: 0 2px 2px 0;
+}
+.toggleGroup label > input:checked + span {
+  background-color: #e48;
+  color: white;
+  font-weight: bold;
+}
+.toggleGroup label > input {
+  display: none;
+}

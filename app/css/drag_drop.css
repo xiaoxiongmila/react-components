@@ -1,0 +1,25 @@
+ul {
+  max-width: 330px;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  border: 5px solid #e1e1e1;
+  box-shadow: 1px 3px 8px #888;
+}
+
+li {
+  padding: 10px 15px;
+  background: #eee;
+}
+li:hover {
+  background: #e1e1e1;
+}
+
+.placeholder {
+  background: #fff078;
+}
+.placeholder:before {
+  content: "Drop here";
+  color: #e1d25a;
+}

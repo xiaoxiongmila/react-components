@@ -1,0 +1,21 @@
+.modalIsOpen {
+  background: white;
+  box-shadow: 0 0 12px 0 rgba(0,0,0,.2);
+  margin: 2rem;
+  padding: 2rem;
+  transform: translateY(0%);
+  transition: all 1s ease;
+}
+.modalIsClosed {
+  display: none;
+  transform: translateY(-100%);
+  transition: all 1s ease;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.headline {
+  font-size: 3rem;
+}
