@@ -15,10 +15,10 @@ import style from './css/radio.css';
 //import Accordion from './components/accordion';
 //import Modal from './components/modal';
 //import ModalPanel from './components/modal_panel';
-//import MenuAnimation from './components/menu_animation';
+import MenuAnimation from './components/menu_animation';
 //import ToggleGroup from './components/toggle_group';
 //import Dropdown from './components/dropdown';
-import DragDrop from './components/drag_drop';
+//import DragDrop from './components/drag_drop';
 
 ///*
 // ReactDOM.render(
@@ -30,6 +30,6 @@ import DragDrop from './components/drag_drop';
 //);
 
 ReactDOM.render(
-  <DragDrop /> , document.getElementById('app')
+  <MenuAnimation /> , document.getElementById('app')
 );
 
